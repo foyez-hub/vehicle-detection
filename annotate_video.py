@@ -9,7 +9,7 @@ from src.process_video import process_video
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Annotate video using trained YOLO model.")
-    parser.add_argument("--video", type=str, default="video/Inference -1.mp4", help="Path to input video file.")
+    parser.add_argument("--video", type=str, default="video/Supporting video for Dataset-1.mp4", help="Path to input video file.")
     parser.add_argument("--model", type=str, default="models/best.pt", help="Path to trained model file.")
     parser.add_argument("--output", type=str, default="video/output_annotated.mp4", help="Path to save annotated video.")
 
