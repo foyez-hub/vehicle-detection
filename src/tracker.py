@@ -32,7 +32,11 @@ class VehicleTracker:
                 print("No GPU detected. Using CPU.")
 
             print(f"Loading model from {self.model_path} on {self.device}...")
-            self.model = YOLO(self.model_path)
+            
+            # Explicitly disable GPU provided checks if ONNX (sometimes onnxruntime needs specific providers)
+            # But Ultralytics standard YOLO() loader handles ONNX auto-download and verify.
+            # We just pass the path.
+            self.model = YOLO(self.model_path, task='detect')
         except Exception as e:
             print(f"Error loading model: {e}")
             sys.exit(1)
@@ -59,6 +63,16 @@ class VehicleTracker:
     def get_names(self):
         """Return the class names from the model."""
         return self.model.names
+
+    def predict(self, source, **kwargs):
+        """
+        Run prediction on a source (image, directory, etc.)
+        Wrapper around YOLO.predict().
+        """
+        # Ensure device is passed if not in kwargs
+        if 'device' not in kwargs:
+            kwargs['device'] = self.device
+        return self.model.predict(source, **kwargs)
 
     def get_gpu_usage(self):
         """Get GPU usage percentage as a string."""

@@ -4,3 +4,5 @@ torch
 numpy
 psutil
 tqdm
+onnxruntime
+onnxruntime-gpu
