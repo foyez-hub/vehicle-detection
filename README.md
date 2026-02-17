@@ -4,7 +4,7 @@
 [![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Android](https://img.shields.io/badge/Android-App-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com/)
 
-![Project Banner](.assets/vehicle_detection_banner.png)
+![Project Banner](.assets/label_vehicle.jpeg)
 
 A comprehensive solution for real-time vehicle detection, tracking, and counting, featuring both a powerful Machine Learning backend and an intuitive Android mobile application.
 
@@ -12,8 +12,7 @@ A comprehensive solution for real-time vehicle detection, tracking, and counting
 
 ## 📺 Project Animation
 
-![Detection Demo](https://media.giphy.com/media/your-animation-link-here/giphy.gif)
-*(Replace with your actual demo GIF or screen recording)*
+![Detection Demo](.assets/real_time.gif)
 
 ---
 
@@ -86,4 +85,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ---
 
-*Developed by Foyez*
+*Developed by Emam Hasan*
