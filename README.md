@@ -12,7 +12,7 @@ A comprehensive solution for real-time vehicle detection, tracking, and counting
 
 ## 📺 Project Animation
 
-![Detection Demo](.assets/real_time.gif)
+![Detection Demo](.assets/real_time_video.gif)
 
 ---
 
