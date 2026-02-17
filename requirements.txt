@@ -1,8 +1,0 @@
-ultralytics==8.4.8
-opencv-python
-torch
-numpy
-psutil
-tqdm
-onnxruntime
-onnxruntime-gpu
